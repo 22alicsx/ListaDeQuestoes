@@ -1,0 +1,31 @@
+<!--Localizar o maior valor dentro de um array de números-->
+
+<html>
+    <head>
+        <title>14 - function</title>
+    </head>
+    <body>
+        <script>
+            let tamanho_array = parseInt(prompt("Tamanho do Array:"));
+            let array = new Array(tamanho_array);
+            let maior = 0;
+
+            for(let i=0; i<array.length; i++){
+                array[i] = parseFloat(prompt("Digite um numero:"));
+            }
+
+            const retornaMaior = (array) => {
+                for(let i = 0; i < array.length; i++) {
+                    if(array[i] > maior) {         
+                        maior = array[i];
+                        }
+                    }
+                
+                return maior;   
+                }
+
+                alert(retornaMaior(array));
+
+        </script>
+    </body>
+</html>

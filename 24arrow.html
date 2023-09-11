@@ -1,0 +1,23 @@
+<!--Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>24 - arrow function</title>
+    </head>
+    <body>
+        <script>
+            let par = [];
+            const pares = (x, y) => {
+                for(let i=x; i<=y; i++){
+                    if(i % 2 === 0){
+                        par.push(i);
+                    }
+                }
+                return par;
+            }
+
+            alert(pares(32, 321).join(", "));
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!-- 
+8. Escreva uma função que informe o retorno de um investimento (montante) com
+base nos valores do capital inicial, tempo em meses e taxa de juros mensal, 
+fornecidos pelo usuário.
+Use a fórmula: M = C * (1+i)t
+Onde:
+ C = Capital inicial investido
+ i = Taxa de juros, em percentual
+ t = Tempo do investimento, em meses
+Exiba o resultado com duas casas decimais.
+ -->
+
+ <html>
+    <head>
+        <title>8 - Function</title>
+    </head>
+    <body>
+        <script>
+            let c = parseFloat(prompt("Digite o Capital Inicial:"));
+            let i = parseFloat(prompt("Digite a Taxa de Juros:"));
+            let t = parseInt(prompt("Digite o Tempo de Investimento (em meses):"));
+
+            function calculoMontante(c, i, t){
+                M = c * ((1 + i)**t);
+                return M;
+            }
+
+            alert(calculoMontante(c, i, t).toFixed(2));
+                      
+        </script>
+    </body>
+ </html>

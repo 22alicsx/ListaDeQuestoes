@@ -1,0 +1,34 @@
+<!--Criar uma função que receba como parâmetro um array de números e retorne um
+array contendo somente números positivos.-->
+
+<html>
+    <head>
+        <title>14 - arrow function</title>
+    </head>
+    <body>
+        <script>
+            let tamanho_array = parseInt(prompt("Tamanho do Array:"));
+            let array = new Array(tamanho_array)
+            let positivos = [];
+
+            for(let i=0; i<array.length; i++){
+                array[i] = parseFloat(prompt("Digite um numero:"));
+            }
+ 
+            const retornaPositivos = () => {
+             
+                for(let i=0; i<array.length; i++){
+                    if(array[i] > 0){
+                        positivos.push(array[i]); 
+                    }
+                }   
+
+                return positivos;
+
+            }
+
+            alert(retornaPositivos());
+
+        </script>
+    </body>
+</html>

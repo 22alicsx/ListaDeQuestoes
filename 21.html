@@ -1,0 +1,23 @@
+<!--Contar a quantidade de palavras em um texto-->
+<html>
+    <head>
+        <title>21 - function</title>
+    </head>
+    <body>
+        <script>
+            let texto = prompt("Digite um texto:");
+            
+            function contarPalavras(texto){
+                let palavras = texto.split(' ');
+                let qtde_palavras = palavras.length;
+
+                return qtde_palavras;
+
+            }
+
+            alert(contarPalavras(texto));
+
+
+        </script>
+    </body>
+</html>

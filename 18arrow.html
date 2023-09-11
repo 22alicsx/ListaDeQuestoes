@@ -1,0 +1,34 @@
+<!--Criar uma função que retorno um valor booleano informando se o número
+enviado como parâmetro é um número primo.-->
+
+<html>
+ <head>
+   <title>18 - html</title>
+</head>
+ <body>
+    <script>
+        let numero = parseInt(prompt("digite um numero:"));
+     
+        const ehPrimo = (numero) => {
+
+            if(numero <= 1){
+                return false;
+            }
+
+            for(let i=2 ; i<numero ; i++){
+                if(numero % i === 0){
+                    return false;
+                }
+            }
+    
+            return true;  
+    }
+
+        alert(ehPrimo(numero));
+
+    </script>
+    
+
+ </body>
+</html>
+

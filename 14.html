@@ -1,0 +1,29 @@
+<!--Criar uma função que receba como parâmetro um array de números e retorne um
+array contendo somente números positivos.-->
+
+<html>
+    <head>
+        <title>14 - function</title>
+    </head>
+    <body>
+        <script>
+            let array = [-2, -1, 0, 1, 2];
+            let positivos = [];
+
+            function retornaPositivos(){
+             
+                for(let i=0; i<array.length; i++){
+                    if(array[i] > 0){
+                        positivos.push(array[i]);
+                    }
+                }   
+
+                return positivos;
+
+            }
+
+            alert(retornaPositivos());
+
+        </script>
+    </body>
+</html>

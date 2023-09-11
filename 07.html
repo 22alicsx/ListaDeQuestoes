@@ -1,0 +1,32 @@
+<!-- 7. Escreva uma função que permita contar o número de vogais contidas em uma 
+    string fornecida pelo usuário. Por exemplo, o usuário informa a string 
+    “Beterraba”, e a função retorna o número 4 (há 4 vogais nessa palavra).
+    Obs. Ignore vogais acentuadas, para simplificar. -->
+
+<html>
+    <head>
+        <title>7 - Function</title>
+    </head>
+    <body>
+        <script>
+            let palavra = prompt("Digite uma palavra:");
+
+            function totalVogal(palavra) {
+                let cont = 0;
+                palavra = palavra.toLowerCase();
+                array = palavra.split('');
+
+                for(let i=0; i<array.length; i++){
+                    if(array[i] === 'a' || array[i] === 'e' || array[i] === 'i' || array[i] ==='o' || array[i] === 'u'){
+                        cont += 1;
+                    }             
+                }
+                return cont;
+            }
+                
+            const vogais = totalVogal(palavra);
+            alert(`total de vogais: ${vogais}`);
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+    Dado o seguinte vetor de objetos:
+    ----
+    Escreva uma função que retorne o seguinte resultado:
+    O Cleocimar possui as habilidades: Javascript, ReactJS, Redux
+    O Juranildo possui as habilidades: PHP, Ruby on Rails, Laravel
+
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>27 - function</title>
+    </head>
+    <body>
+        <script>
+          var usuarios = [{
+            nome: "Cleocimar",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+            nome: "Juranildo",
+            habilidades: ["PHP", "Ruby on Rails", "Laravel"]
+            }];
+
+            function habilidades(usuarios){
+                let resultado = "";
+                for (let i = 0; i < usuarios.length; i++) {
+                    resultado += `O ${usuarios[i].nome} possui as habilidades: ${usuarios[i].habilidades.join(', ')}\n`;
+                }
+                return resultado;
+            }
+
+            alert(habilidades(usuarios));
+         
+        </script>
+    </body>
+</html>

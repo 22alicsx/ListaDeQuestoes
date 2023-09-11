@@ -1,0 +1,26 @@
+<!--Localizar o maior valor dentro de um array de números-->
+
+<html>
+    <head>
+        <title>15 - function</title>
+    </head>
+    <body>
+        <script>
+            let array = [10, 340, 67, 98];
+            let maior = 0;
+
+            function retornaMaior(array) {
+                for(let i = 0; i < array.length; i++) {
+                    if(array[i] > maior) {         
+                        maior = array[i];
+                        }
+                    }
+                
+                return maior;   
+                }
+
+            alert(retornaMaior(array));
+
+        </script>
+    </body>
+</html>

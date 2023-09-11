@@ -1,0 +1,33 @@
+<!--Retornar a maior string de um array-->
+
+<html>
+    <head>
+        <title>19 - arrow function</title>
+    </head>
+    <body>
+        <script>
+            let tamanho_array = parseInt(prompt("Tamanho do Array:"));
+            let array = new Array(tamanho_array);
+            let maior = "";
+
+            for(let i=0; i<array.length; i++){
+                array[i] = prompt("Digite uma palavra:");
+            }
+            console.log(array)
+
+            const retornaMaiorPalavra = (array) => {
+                for(let i = 0; i < array.length; i++) {
+                    let palavra = array[i];
+                    if(palavra.length > maior.length) {         
+                        maior = palavra;
+                        }
+                    }
+                
+                return maior;   
+                }
+
+            alert(retornaMaiorPalavra(array));
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!--Criar uma função que junte dois arrays e retorno o resultado como um novo array-->
+<html>
+    <head>
+        <title>20 - arrow function</title>
+    </head>
+    <body>
+        <script>
+            let array1 = ["Alice", "Gael"];
+            let array2 = ["Gelcivan", "Daiana"];
+
+            const juntarArrays = (array1, array2) => {
+                let array3 = array1.concat(array2);
+
+                return array3;
+
+            }
+
+            alert(juntarArrays(array1, array2).join(", "));
+
+        </script>
+    </body>
+</html>

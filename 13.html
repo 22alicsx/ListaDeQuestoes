@@ -1,0 +1,30 @@
+<!--Calcular a média de todos os números de um array-->
+
+<html>
+    <head>
+        <title>13 - Function</title>
+    </head>
+    <body>
+        <script>
+            let tamanho_array = parseInt(prompt("Digite o tamanho do array:"))
+            let array = new Array(tamanho_array);
+            let soma = 0;
+            let media = 0; 
+
+            function mediaArray(){
+
+                for(let i = 0; i<array.length ; i++){
+                    array[i] = parseInt(prompt("Digite um numero:"));
+                    soma += array[i];
+                }
+
+                media = soma/array.length;
+                return media;
+
+            }
+
+            alert(mediaArray());
+
+        </script>
+    </body>
+</html>

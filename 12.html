@@ -1,0 +1,26 @@
+<!-- Calcular a soma dos números de um array -->
+
+<html>
+    <head>
+        <title>12 - Function</title>
+    </head>
+    <body>
+        <script>
+            let numeros = new Array(2);
+            let soma = 0; 
+
+            function somaNumeros(){
+
+                for(let i = 0; i<numeros.length ; i++){
+                    numeros[i] = parseInt(prompt("Digite um numero:"));
+                    soma += numeros[i];
+                }
+
+                return soma;
+            }
+
+            alert(somaNumeros());
+
+        </script>
+    </body>
+</html>

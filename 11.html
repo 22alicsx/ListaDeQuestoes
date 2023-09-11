@@ -1,0 +1,31 @@
+<!-- 
+Escreva uma função que verifica se um número fornecido pelo usuário em um
+prompt é primo ou não.
+-->
+<html>
+    <head>
+        <title>11 - Function</title>
+    </head>
+    <body>
+        <script>
+            let num = prompt("Digite um numero:");
+
+            function ehPrimo(num) {
+                if (num <= 1) {
+                    return ('Não é primo');
+                }
+
+                for (let i = 2; i < num; i++) {
+                    if (num % i === 0) {
+                        return ('Não é primo');
+                    }
+            }
+            
+            return ('É primo');
+            }
+                            
+            alert(ehPrimo(num));
+            
+        </script>
+    </body>
+</html>

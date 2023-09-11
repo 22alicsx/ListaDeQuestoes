@@ -1,0 +1,26 @@
+<!--Criar uma função para inverter um array-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>23 - Function</title>
+    </head>
+    <body>
+        <script>
+           var endereco = {
+                rua: "Av do CPA",
+                numero: 1293,
+                bairro: "Jardim Cuiabá",
+                cidade: "Cuiabá",
+                uf: "MT"
+                };
+            
+            function conteudo(endereco){
+                return (`O usuário mora em ${endereco.cidade}/${endereco.uf}, no bairro ${endereco.bairro}, na ${endereco.rua}, no ${endereco.numero}.`);
+
+            }
+
+            alert(conteudo(endereco));
+
+        </script>
+    </body>
+</html>

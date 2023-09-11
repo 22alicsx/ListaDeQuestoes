@@ -1,0 +1,28 @@
+<!--Calcular a soma de todos os dígitos de um número inteiro positivo-->
+
+<html>
+    <head>
+        <title>16 - function</title>
+    </head>
+    <body>
+        <script>
+            let numero = parseInt(prompt("Digite um numero:"));
+            let arrayDigitos = Array.from(numero.toString()).map(Number);
+
+            console.log(arrayDigitos);
+
+            let soma = 0;
+            
+            function somaDigitos(numero) {
+                for(let i = 0; i < arrayDigitos.length; i++) {
+                    soma += arrayDigitos[i];        
+                }
+                
+                return soma;   
+                }
+
+            alert(somaDigitos(numero));
+
+        </script>
+    </body>
+</html>

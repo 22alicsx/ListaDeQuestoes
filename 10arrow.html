@@ -1,0 +1,33 @@
+<!-- 
+Escreva uma função em JavaScript que conte quantas vezes um caractere aparece
+em uma string. Tanto o caractere quanto a string devem ser fornecidos pelo usuário.
+-->
+<html>
+    <head>
+        <title>10 - Arrow Function</title>
+    </head>
+    <body>
+        <script>
+            let palavra = prompt("Digite uma palavra:");
+            let caractere = prompt("Digite um caractere:");
+
+            const contaCaractere = (palavra, caractere) => {
+                let cont = 0;
+                palavra = palavra.toLowerCase();
+                array = palavra.split('');
+
+                for(let i=0; i<array.length; i++){
+                    if(array[i] === caractere){
+                        cont += 1;
+                    }
+                                
+                }
+                return cont;
+            }
+                
+            const totalC = contaCaractere(palavra, caractere);
+            alert(`total de aparições do caractere = ${totalC}`);
+            
+        </script>
+    </body>
+</html>

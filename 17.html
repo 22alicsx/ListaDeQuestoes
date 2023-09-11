@@ -1,0 +1,32 @@
+<!--Imprimir os 10 primeiros números da sequência de Fibonacci-->
+
+<html>
+ <head>
+   <title>17 - function</title>
+</head>
+ <body>
+    <script>
+        let numero = parseInt(prompt("Exibir ate o numero:"));
+     
+        function fibonacci(numero){
+            var penultimo=0, ultimo=1;
+            var num;
+    
+            if(numero<=2)
+            num = numero-1;
+            else
+                for(let i=3 ; i<=numero ; i++){
+                    num = ultimo + penultimo;
+                    penultimo = ultimo;
+                    ultimo = num;
+                }
+    
+            return num;  
+    }
+        alert(fibonacci(numero));
+    </script>
+    
+
+ </body>
+</html>
+

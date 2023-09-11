@@ -1,0 +1,28 @@
+<!-- 
+Escreva uma função que calcule e retorne o fatorial de um número inteiro fornecido
+pelo usuário.
+-->
+
+<html>
+    <head>
+        <title>9 - Function</title>
+    </head>
+    <body>
+        <script>
+            let num = parseInt(prompt("Digite um numero inteiro:"));
+
+            function calculaFatorial(num){
+                if (num < 0) 
+                    return ("Nao é um numero inteiro");
+                else if (num === 0) 
+                    return 1;
+                else {
+                    return (num * calculaFatorial(num - 1));
+                }
+            }
+
+            alert(calculaFatorial(num));
+
+        </script>
+    </body>
+</html>
